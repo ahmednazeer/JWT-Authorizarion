@@ -4,6 +4,8 @@ using Data;
 using Data.Entities;
 using Jwt.API.Controllers;
 using Jwt.API.Models;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
 using WebApi.Models.Users;
@@ -11,6 +13,7 @@ using WebApi.Services;
 namespace WebApi.Controllers;
 [ApiController]
 [Route("[controller]")]
+[Authorize(AuthenticationSchemes=JwtBearerDefaults.AuthenticationScheme)]
 public class TeamsController : BaseController
 {
     private readonly ITeamService _teamService;
