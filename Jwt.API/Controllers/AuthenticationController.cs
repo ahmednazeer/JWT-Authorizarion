@@ -9,6 +9,10 @@ using Microsoft.Extensions.Options;
 
 namespace Jwt.API.Controllers
 {
+    /*
+     "email": "test@test.com",
+     "password": "Ts_101010"
+     */
     [Route("api/[controller]")]
     [ApiController]
     public class AuthenticationController : ControllerBase
