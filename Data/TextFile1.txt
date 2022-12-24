@@ -1,2 +1,0 @@
-﻿"email": "test@test.com",
-"password": "Ts_101010"
